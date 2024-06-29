@@ -2843,7 +2843,7 @@ header a:hover::before
 .loading-counter-bottom .loading-counter
 {
     position: absolute;
-    bottom: 30px;
+    bottom: 100px;
     right: 50px;
     display: flex;
     align-items: center;
