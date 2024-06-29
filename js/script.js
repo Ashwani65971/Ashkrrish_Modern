@@ -83,6 +83,24 @@ $('.abouts').tilt({
     maxGlare: .5
 })
 
+// js code for main container section 
+let mainContainer = document.querySelector('.main-container');
+if(mainContainer)
+    {
+        gsap.to(mainContainer,{
+            rotate: "180deg",
+            duration:2,
+            scrollTrigger : {
+                trigger : mainContainer,
+                scroller : "body",
+                // markers : true,
+                start : "top -10%",
+                end :  "top -200%",
+                scrub : 1,
+            }
+        })
+    }
+
 // js code for image trail 
 let imageTrail = document.querySelector('.image-trail');
 

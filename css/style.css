@@ -151,12 +151,14 @@ header a:hover::before
     top:0;
     left: 0;
     z-index: 2;
-    animation: containerAnim ease-in-out both;
+    transform-style: preserve-3d;
+    perspective: 1500px;
+    /* animation: containerAnim ease-in-out both;
     animation-timeline: view(block);
-    animation-range: cover 55% cover 100%;
+    animation-range: cover 55% cover 100%; */
     transform-origin: top;
 }
-@keyframes containerAnim
+/* @keyframes containerAnim
 {
     from
     {
@@ -166,7 +168,7 @@ header a:hover::before
     {
         transform: scale(0.5) rotate(180deg);
     }
-}
+} */
 .main-container .center-text h1
 {
     color: rgb(255, 255, 255);
@@ -2887,7 +2889,6 @@ header a:hover::before
     /* background-color: red; */
     width:fit-content;
     padding: 20px;
-    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
